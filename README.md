@@ -1,0 +1,7 @@
+# Movie-Database
+The movie database project is a web application that allows users to view, add, and delete movie data stored in a database. The application consists of a server-side script that connects to the database and retrieves the movie data, and a client-side script that fetches the movie data 
+The movie database project is a web application that allows users to view, add, and delete movie data stored in a database. The application consists of a server-side script that connects to the database and retrieves the movie data, and a client-side script that fetches the movie data and displays it on a webpage. The webpage includes a table for displaying the movie data and a form for adding new movies to the database. Each row in the table also includes a delete button that allows users to remove a movie from the database.
+
+The project uses HTML, CSS, and JavaScript to create the user interface and interact with the server-side script. The server-side script is written in a server-side language such as PHP, Python, or Node.js, and uses a database system such as MySQL or MongoDB to store the movie data. The client-side script uses the fetch API to request data from the server-side script and update the HTML document with the movie data.
+
+Overall, the movie database project demonstrates how to create a simple web application that interacts with a database and allows users to view, add, and delete data.
