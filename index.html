@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie | Search & Enjoy</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+	</head>
+	<body>
+		<div class="container mt-5">
+			<table
+				id="example"
+				class="table table-striped moviesTable"
+				style="width: 100%"
+			>
+				<thead>
+					<tr>
+						<th>Film</th>
+						<th>Genre</th>
+						<th>Lead Studio</th>
+						<th>Audience score %</th>
+						<th>Profitability</th>
+						<th>Rotten Tomatoes %</th>
+						<th>Worldwide Gross</th>
+						<th>Year</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="row1">
+						<td class="column0 style0 s">Zack and Miri Make a Porno</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">The Weinstein Company</td>
+						<td class="column3 style0 n">70</td>
+						<td class="column4 style0 n">1.747541667</td>
+						<td class="column5 style0 n">64</td>
+						<td class="column6 style0 s">$41.94</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row2">
+						<td class="column0 style0 s">Youth in Revolt</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">The Weinstein Company</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">1.09</td>
+						<td class="column5 style0 n">68</td>
+						<td class="column6 style0 s">$19.62</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row3">
+						<td class="column0 style0 s">You Will Meet a Tall Dark Stranger</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">35</td>
+						<td class="column4 style0 n">1.211818182</td>
+						<td class="column5 style0 n">43</td>
+						<td class="column6 style0 s">$26.66</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row4">
+						<td class="column0 style0 s">When in Rome</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">44</td>
+						<td class="column4 style0 n">0</td>
+						<td class="column5 style0 n">15</td>
+						<td class="column6 style0 s">$43.04</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row5">
+						<td class="column0 style0 s">What Happens in Vegas</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">72</td>
+						<td class="column4 style0 n">6.267647029</td>
+						<td class="column5 style0 n">28</td>
+						<td class="column6 style0 s">$219.37</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row6">
+						<td class="column0 style0 s">Water For Elephants</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">20th Century Fox</td>
+						<td class="column3 style0 n">72</td>
+						<td class="column4 style0 n">3.081421053</td>
+						<td class="column5 style0 n">60</td>
+						<td class="column6 style0 s">$117.09</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row7">
+						<td class="column0 style0 s">WALL-E</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">89</td>
+						<td class="column4 style0 n">2.896019067</td>
+						<td class="column5 style0 n">96</td>
+						<td class="column6 style0 s">$521.28</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row8">
+						<td class="column0 style0 s">Waitress</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">67</td>
+						<td class="column4 style0 n">11.0897415</td>
+						<td class="column5 style0 n">89</td>
+						<td class="column6 style0 s">$22.18</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row9">
+						<td class="column0 style0 s">Waiting For Forever</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">53</td>
+						<td class="column4 style0 n">0.005</td>
+						<td class="column5 style0 n">6</td>
+						<td class="column6 style0 s">$0.03</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row10">
+						<td class="column0 style0 s">Valentine's Day</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">54</td>
+						<td class="column4 style0 n">4.184038462</td>
+						<td class="column5 style0 n">17</td>
+						<td class="column6 style0 s">$217.57</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row11">
+						<td class="column0 style0 s">
+							Tyler Perry's Why Did I get Married
+						</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">3.7241924</td>
+						<td class="column5 style0 n">46</td>
+						<td class="column6 style0 s">$55.86</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row12">
+						<td class="column0 style0 s">Twilight: Breaking Dawn</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">68</td>
+						<td class="column4 style0 n">6.383363636</td>
+						<td class="column5 style0 n">26</td>
+						<td class="column6 style0 s">$702.17</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row13">
+						<td class="column0 style0 s">Twilight</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Summit</td>
+						<td class="column3 style0 n">82</td>
+						<td class="column4 style0 n">10.18002703</td>
+						<td class="column5 style0 n">49</td>
+						<td class="column6 style0 s">$376.66</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row14">
+						<td class="column0 style0 s">The Ugly Truth</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">68</td>
+						<td class="column4 style0 n">5.402631579</td>
+						<td class="column5 style0 n">14</td>
+						<td class="column6 style0 s">$205.30</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row15">
+						<td class="column0 style0 s">The Twilight Saga: New Moon</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Summit</td>
+						<td class="column3 style0 n">78</td>
+						<td class="column4 style0 n">14.1964</td>
+						<td class="column5 style0 n">27</td>
+						<td class="column6 style0 s">$709.82</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row16">
+						<td class="column0 style0 s">The Time Traveler's Wife</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Paramount</td>
+						<td class="column3 style0 n">65</td>
+						<td class="column4 style0 n">2.598205128</td>
+						<td class="column5 style0 n">38</td>
+						<td class="column6 style0 s">$101.33</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row17">
+						<td class="column0 style0 s">The Proposal</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">74</td>
+						<td class="column4 style0 n">7.8675</td>
+						<td class="column5 style0 n">43</td>
+						<td class="column6 style0 s">$314.70</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row18">
+						<td class="column0 style0 s">The Invention of Lying</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">1.751351351</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$32.40</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row19">
+						<td class="column0 style0 s">The Heartbreak Kid</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Paramount</td>
+						<td class="column3 style0 n">41</td>
+						<td class="column4 style0 n">2.129444167</td>
+						<td class="column5 style0 n">30</td>
+						<td class="column6 style0 s">$127.77</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row20">
+						<td class="column0 style0 s">The Duchess</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Paramount</td>
+						<td class="column3 style0 n">68</td>
+						<td class="column4 style0 n">3.207850222</td>
+						<td class="column5 style0 n">60</td>
+						<td class="column6 style0 s">$43.31</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row21">
+						<td class="column0 style0 s">
+							The Curious Case of Benjamin Button
+						</td>
+						<td class="column1 style0 s">Fantasy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">81</td>
+						<td class="column4 style0 n">1.78394375</td>
+						<td class="column5 style0 n">73</td>
+						<td class="column6 style0 s">$285.43</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row22">
+						<td class="column0 style0 s">The Back-up Plan</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">CBS</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">2.202571429</td>
+						<td class="column5 style0 n">20</td>
+						<td class="column6 style0 s">$77.09</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row23">
+						<td class="column0 style0 s">Tangled</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">88</td>
+						<td class="column4 style0 n">1.365692308</td>
+						<td class="column5 style0 n">89</td>
+						<td class="column6 style0 s">$355.01</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row24">
+						<td class="column0 style0 s">Something Borrowed</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">48</td>
+						<td class="column4 style0 n">1.719514286</td>
+						<td class="column5 style0 n">15</td>
+						<td class="column6 style0 s">$60.18</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row25">
+						<td class="column0 style0 s">She's Out of My League</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Paramount</td>
+						<td class="column3 style0 n">60</td>
+						<td class="column4 style0 n">2.4405</td>
+						<td class="column5 style0 n">57</td>
+						<td class="column6 style0 s">$48.81</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row26">
+						<td class="column0 style0 s">Sex and the City Two</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">49</td>
+						<td class="column4 style0 n">2.8835</td>
+						<td class="column5 style0 n">15</td>
+						<td class="column6 style0 s">$288.35</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row27">
+						<td class="column0 style0 s">Sex and the City 2</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">49</td>
+						<td class="column4 style0 n">2.8835</td>
+						<td class="column5 style0 n">15</td>
+						<td class="column6 style0 s">$288.35</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row28">
+						<td class="column0 style0 s">Sex and the City</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">81</td>
+						<td class="column4 style0 n">7.221795791</td>
+						<td class="column5 style0 n">49</td>
+						<td class="column6 style0 s">$415.25</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row29">
+						<td class="column0 style0 s">Remember Me</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Summit</td>
+						<td class="column3 style0 n">70</td>
+						<td class="column4 style0 n">3.49125</td>
+						<td class="column5 style0 n">28</td>
+						<td class="column6 style0 s">$55.86</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row30">
+						<td class="column0 style0 s">Rachel Getting Married</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">61</td>
+						<td class="column4 style0 n">1.384166667</td>
+						<td class="column5 style0 n">85</td>
+						<td class="column6 style0 s">$16.61</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row31">
+						<td class="column0 style0 s">Penelope</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Summit</td>
+						<td class="column3 style0 n">74</td>
+						<td class="column4 style0 n">1.382799733</td>
+						<td class="column5 style0 n">52</td>
+						<td class="column6 style0 s">$20.74</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row32">
+						<td class="column0 style0 s">P.S. I Love You</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">82</td>
+						<td class="column4 style0 n">5.103116833</td>
+						<td class="column5 style0 n">21</td>
+						<td class="column6 style0 s">$153.09</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row33">
+						<td class="column0 style0 s">Over Her Dead Body</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">New Line</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">2.071</td>
+						<td class="column5 style0 n">15</td>
+						<td class="column6 style0 s">$20.71</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row34">
+						<td class="column0 style0 s">Our Family Wedding</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">49</td>
+						<td class="column4 style0 n">0</td>
+						<td class="column5 style0 n">14</td>
+						<td class="column6 style0 s">$21.37</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row35">
+						<td class="column0 style0 s">One Day</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">54</td>
+						<td class="column4 style0 n">3.682733333</td>
+						<td class="column5 style0 n">37</td>
+						<td class="column6 style0 s">$55.24</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row36">
+						<td class="column0 style0 s">Not Easily Broken</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">66</td>
+						<td class="column4 style0 n">2.14</td>
+						<td class="column5 style0 n">34</td>
+						<td class="column6 style0 s">$10.70</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row37">
+						<td class="column0 style0 s">No Reservations</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">64</td>
+						<td class="column4 style0 n">3.307180357</td>
+						<td class="column5 style0 n">39</td>
+						<td class="column6 style0 s">$92.60</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row38">
+						<td class="column0 style0 s">Nick and Norah's Infinite Playlist</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Sony</td>
+						<td class="column3 style0 n">67</td>
+						<td class="column4 style0 n">3.3527293</td>
+						<td class="column5 style0 n">73</td>
+						<td class="column6 style0 s">$33.53</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row39">
+						<td class="column0 style0 s">New Year's Eve</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">48</td>
+						<td class="column4 style0 n">2.536428571</td>
+						<td class="column5 style0 n">8</td>
+						<td class="column6 style0 s">$142.04</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row40">
+						<td class="column0 style0 s">My Week with Marilyn</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">The Weinstein Company</td>
+						<td class="column3 style0 n">84</td>
+						<td class="column4 style0 n">0.8258</td>
+						<td class="column5 style0 n">83</td>
+						<td class="column6 style0 s">$8.26</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row41">
+						<td class="column0 style0 s">Music and Lyrics</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">70</td>
+						<td class="column4 style0 n">3.64741055</td>
+						<td class="column5 style0 n">63</td>
+						<td class="column6 style0 s">$145.90</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row42">
+						<td class="column0 style0 s">Monte Carlo</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">20th Century Fox</td>
+						<td class="column3 style0 n">50</td>
+						<td class="column4 style0 n">1.9832</td>
+						<td class="column5 style0 n">38</td>
+						<td class="column6 style0 s">$39.66</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row43">
+						<td class="column0 style0 s">Miss Pettigrew Lives for a Day</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">70</td>
+						<td class="column4 style0 n">0.2528949</td>
+						<td class="column5 style0 n">78</td>
+						<td class="column6 style0 s">$15.17</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row44">
+						<td class="column0 style0 s">Midnight in Paris</td>
+						<td class="column1 style0 s">Romence</td>
+						<td class="column2 style0 s">Sony</td>
+						<td class="column3 style0 n">84</td>
+						<td class="column4 style0 n">8.744705882</td>
+						<td class="column5 style0 n">93</td>
+						<td class="column6 style0 s">$148.66</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row45">
+						<td class="column0 style0 s">Marley and Me</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">77</td>
+						<td class="column4 style0 n">3.746781818</td>
+						<td class="column5 style0 n">63</td>
+						<td class="column6 style0 s">$206.07</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row46">
+						<td class="column0 style0 s">Mamma Mia!</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">76</td>
+						<td class="column4 style0 n">9.234453864</td>
+						<td class="column5 style0 n">53</td>
+						<td class="column6 style0 s">$609.47</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row47">
+						<td class="column0 style0 s">Mamma Mia!</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">76</td>
+						<td class="column4 style0 n">9.234453864</td>
+						<td class="column5 style0 n">53</td>
+						<td class="column6 style0 s">$609.47</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row48">
+						<td class="column0 style0 s">Made of Honor</td>
+						<td class="column1 style0 s">Comdy</td>
+						<td class="column2 style0 s">Sony</td>
+						<td class="column3 style0 n">61</td>
+						<td class="column4 style0 n">2.64906835</td>
+						<td class="column5 style0 n">13</td>
+						<td class="column6 style0 s">$105.96</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row49">
+						<td class="column0 style0 s">Love Happens</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">40</td>
+						<td class="column4 style0 n">2.004444444</td>
+						<td class="column5 style0 n">18</td>
+						<td class="column6 style0 s">$36.08</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row50">
+						<td class="column0 style0 s">Love &amp; Other Drugs</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">55</td>
+						<td class="column4 style0 n">1.817666667</td>
+						<td class="column5 style0 n">48</td>
+						<td class="column6 style0 s">$54.53</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row51">
+						<td class="column0 style0 s">Life as We Know It</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">62</td>
+						<td class="column4 style0 n">2.530526316</td>
+						<td class="column5 style0 n">28</td>
+						<td class="column6 style0 s">$96.16</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row52">
+						<td class="column0 style0 s">License to Wed</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">55</td>
+						<td class="column4 style0 n">1.9802064</td>
+						<td class="column5 style0 n">8</td>
+						<td class="column6 style0 s">$69.31</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row53">
+						<td class="column0 style0 s">Letters to Juliet</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Summit</td>
+						<td class="column3 style0 n">62</td>
+						<td class="column4 style0 n">2.639333333</td>
+						<td class="column5 style0 n">40</td>
+						<td class="column6 style0 s">$79.18</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row54">
+						<td class="column0 style0 s">Leap Year</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">49</td>
+						<td class="column4 style0 n">1.715263158</td>
+						<td class="column5 style0 n">21</td>
+						<td class="column6 style0 s">$32.59</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row55">
+						<td class="column0 style0 s">Knocked Up</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">83</td>
+						<td class="column4 style0 n">6.636401848</td>
+						<td class="column5 style0 n">91</td>
+						<td class="column6 style0 s">$219</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row56">
+						<td class="column0 style0 s">Killers</td>
+						<td class="column1 style0 s">Action</td>
+						<td class="column2 style0 s">Lionsgate</td>
+						<td class="column3 style0 n">45</td>
+						<td class="column4 style0 n">1.245333333</td>
+						<td class="column5 style0 n">11</td>
+						<td class="column6 style0 s">$93.40</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row57">
+						<td class="column0 style0 s">Just Wright</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">58</td>
+						<td class="column4 style0 n">1.797416667</td>
+						<td class="column5 style0 n">45</td>
+						<td class="column6 style0 s">$21.57</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row58">
+						<td class="column0 style0 s">Jane Eyre</td>
+						<td class="column1 style0 s">Romance</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">77</td>
+						<td class="column4 style0 n">0</td>
+						<td class="column5 style0 n">85</td>
+						<td class="column6 style0 s">$30.15</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row59">
+						<td class="column0 style0 s">It's Complicated</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">63</td>
+						<td class="column4 style0 n">2.642352941</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$224.60</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row60">
+						<td class="column0 style0 s">I Love You Phillip Morris</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">57</td>
+						<td class="column4 style0 n">1.34</td>
+						<td class="column5 style0 n">71</td>
+						<td class="column6 style0 s">$20.10</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row61">
+						<td class="column0 style0 s">High School Musical 3: Senior Year</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">76</td>
+						<td class="column4 style0 n">22.91313646</td>
+						<td class="column5 style0 n">65</td>
+						<td class="column6 style0 s">$252.04</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row62">
+						<td class="column0 style0 s">He's Just Not That Into You</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">60</td>
+						<td class="column4 style0 n">7.1536</td>
+						<td class="column5 style0 n">42</td>
+						<td class="column6 style0 s">$178.84</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row63">
+						<td class="column0 style0 s">Good Luck Chuck</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Lionsgate</td>
+						<td class="column3 style0 n">61</td>
+						<td class="column4 style0 n">2.36768512</td>
+						<td class="column5 style0 n">3</td>
+						<td class="column6 style0 s">$59.19</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row64">
+						<td class="column0 style0 s">Going the Distance</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">56</td>
+						<td class="column4 style0 n">1.3140625</td>
+						<td class="column5 style0 n">53</td>
+						<td class="column6 style0 s">$42.05</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row65">
+						<td class="column0 style0 s">Gnomeo and Juliet</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">5.387972222</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$193.97</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row66">
+						<td class="column0 style0 s">Gnomeo and Juliet</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">5.387972222</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$193.97</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row67">
+						<td class="column0 style0 s">Ghosts of Girlfriends Past</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">2.0444</td>
+						<td class="column5 style0 n">27</td>
+						<td class="column6 style0 s">$102.22</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row68">
+						<td class="column0 style0 s">Four Christmases</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">2.022925</td>
+						<td class="column5 style0 n">26</td>
+						<td class="column6 style0 s">$161.83</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row69">
+						<td class="column0 style0 s">Fireproof</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">51</td>
+						<td class="column4 style0 n">66.934</td>
+						<td class="column5 style0 n">40</td>
+						<td class="column6 style0 s">$33.47</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row70">
+						<td class="column0 style0 s">Enchanted</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">80</td>
+						<td class="column4 style0 n">4.005737082</td>
+						<td class="column5 style0 n">93</td>
+						<td class="column6 style0 s">$340.49</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row71">
+						<td class="column0 style0 s">Dear John</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Sony</td>
+						<td class="column3 style0 n">66</td>
+						<td class="column4 style0 n">4.5988</td>
+						<td class="column5 style0 n">29</td>
+						<td class="column6 style0 s">$114.97</td>
+						<td class="column7 style0 n">2010</td>
+					</tr>
+					<tr class="row72">
+						<td class="column0 style0 s">Beginners</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">80</td>
+						<td class="column4 style0 n">4.471875</td>
+						<td class="column5 style0 n">84</td>
+						<td class="column6 style0 s">$14.31</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row73">
+						<td class="column0 style0 s">Across the Universe</td>
+						<td class="column1 style0 s">romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">84</td>
+						<td class="column4 style0 n">0.652603178</td>
+						<td class="column5 style0 n">54</td>
+						<td class="column6 style0 s">$29.37</td>
+						<td class="column7 style0 n">2007</td>
+					</tr>
+					<tr class="row74">
+						<td class="column0 style0 s">A Serious Man</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">64</td>
+						<td class="column4 style0 n">4.382857143</td>
+						<td class="column5 style0 n">89</td>
+						<td class="column6 style0 s">$30.68</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+					<tr class="row75">
+						<td class="column0 style0 s">A Dangerous Method</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">89</td>
+						<td class="column4 style0 n">0.44864475</td>
+						<td class="column5 style0 n">79</td>
+						<td class="column6 style0 s">$8.97</td>
+						<td class="column7 style0 n">2011</td>
+					</tr>
+					<tr class="row76">
+						<td class="column0 style0 s">27 Dresses</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">71</td>
+						<td class="column4 style0 n">5.3436218</td>
+						<td class="column5 style0 n">40</td>
+						<td class="column6 style0 s">$160.31</td>
+						<td class="column7 style0 n">2008</td>
+					</tr>
+					<tr class="row77">
+						<td class="column0 style0 s">(500) Days of Summer</td>
+						<td class="column1 style0 s">comedy</td>
+						<td class="column2 style0 s">Fox</td>
+						<td class="column3 style0 n">81</td>
+						<td class="column4 style0 n">8.096</td>
+						<td class="column5 style0 n">87</td>
+						<td class="column6 style0 s">$60.72</td>
+						<td class="column7 style0 n">2009</td>
+					</tr>
+				</tbody>
+			</table>
+			<table
+				id="example"
+				class="table table-striped moviesTable"
+				style="width: 100%"
+			></table>
+			<div class="container">
+				<form id="addMovieForm" class="row g-3">
+					<div class="col-md-4">
+						<label for="film" class="form-label">Film Title</label>
+						<input type="text" class="form-control" id="film" required="" />
+					</div>
+					<div class="col-md-4">
+						<label for="genre" class="form-label">Genre</label>
+						<input type="text" class="form-control" id="genre" required="" />
+					</div>
+					<div class="col-md-4">
+						<label for="leadStudio" class="form-label">Lead Studio</label>
+						<input
+							type="text"
+							class="form-control"
+							id="leadStudio"
+							required=""
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="audienceScore" class="form-label">Audience Score</label>
+						<input
+							type="text"
+							class="form-control"
+							id="audienceScore"
+							required=""
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="profitability" class="form-label">Profitability</label>
+						<input
+							type="text"
+							class="form-control"
+							id="profitability"
+							required=""
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="rottenTomatoes" class="form-label"
+							>Rotten Tomatoes</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							id="rottenTomatoes"
+							required=""
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="worldwideGross" class="form-label"
+							>Worldwide Gross</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							id="worldwideGross"
+							required=""
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="year" class="form-label">Year</label>
+						<input type="text" class="form-control" id="year" required="" />
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Add Movie</button>
+					</div>
+				</form>
+			</div>
+			<table
+				id="movies"
+				class="table table-striped moviesTable"
+				style="width: 100%"
+			>
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Genre</th>
+						<th>Lead Studio</th>
+						<th>Audience Score %</th>
+						<th>Profitability</th>
+						<th>Rotten Tomatoes %</th>
+						<th>Worldwide Gross</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>The Dark Knight</td>
+						<td>Action, Crime, Drama</td>
+						<td>Warner Bros.</td>
+						<td>94</td>
+						<td>6.12</td>
+						<td>94</td>
+						<td>$1,004.9 million</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Inception</td>
+						<td>Action, Adventure, Sci-Fi</td>
+						<td>Warner Bros.</td>
+						<td>91</td>
+						<td>3.69</td>
+						<td>86</td>
+						<td>$829.9 million</td>
+						<td>
+							<button class="delete-btn " onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row64">
+						<td class="column0 style0 s">Going the Distance</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">56</td>
+						<td class="column4 style0 n">1.3140625</td>
+						<td class="column5 style0 n">53</td>
+						<td class="column6 style0 s">$42.05</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+
+					</tr>
+					<tr class="row65">
+						<td class="column0 style0 s">Gnomeo and Juliet</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">5.387972222</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$193.97</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row66">
+						<td class="column0 style0 s">Gnomeo and Juliet</td>
+						<td class="column1 style0 s">Animation</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">5.387972222</td>
+						<td class="column5 style0 n">56</td>
+						<td class="column6 style0 s">$193.97</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row67">
+						<td class="column0 style0 s">Ghosts of Girlfriends Past</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">47</td>
+						<td class="column4 style0 n">2.0444</td>
+						<td class="column5 style0 n">27</td>
+						<td class="column6 style0 s">$102.22</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row68">
+						<td class="column0 style0 s">Four Christmases</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Warner Bros.</td>
+						<td class="column3 style0 n">52</td>
+						<td class="column4 style0 n">2.022925</td>
+						<td class="column5 style0 n">26</td>
+						<td class="column6 style0 s">$161.83</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row69">
+						<td class="column0 style0 s">Fireproof</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">51</td>
+						<td class="column4 style0 n">66.934</td>
+						<td class="column5 style0 n">40</td>
+						<td class="column6 style0 s">$33.47</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row70">
+						<td class="column0 style0 s">Enchanted</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Disney</td>
+						<td class="column3 style0 n">80</td>
+						<td class="column4 style0 n">4.005737082</td>
+						<td class="column5 style0 n">93</td>
+						<td class="column6 style0 s">$340.49</td>
+                        <td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row71">
+						<td class="column0 style0 s">Dear John</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Sony</td>
+						<td class="column3 style0 n">66</td>
+						<td class="column4 style0 n">4.5988</td>
+						<td class="column5 style0 n">29</td>
+						<td class="column6 style0 s">$114.97</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row72">
+						<td class="column0 style0 s">Beginners</td>
+						<td class="column1 style0 s">Comedy</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">80</td>
+						<td class="column4 style0 n">4.471875</td>
+						<td class="column5 style0 n">84</td>
+						<td class="column6 style0 s">$14.31</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row73">
+						<td class="column0 style0 s">Across the Universe</td>
+						<td class="column1 style0 s">romance</td>
+						<td class="column2 style0 s">Independent</td>
+						<td class="column3 style0 n">84</td>
+						<td class="column4 style0 n">0.652603178</td>
+						<td class="column5 style0 n">54</td>
+						<td class="column6 style0 s">$29.37</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+					<tr class="row74">
+						<td class="column0 style0 s">A Serious Man</td>
+						<td class="column1 style0 s">Drama</td>
+						<td class="column2 style0 s">Universal</td>
+						<td class="column3 style0 n">64</td>
+						<td class="column4 style0 n">4.382857143</td>
+						<td class="column5 style0 n">89</td>
+						<td class="column6 style0 s">$30.68</td>
+						<td>
+							<button class="delete-btn" onclick="deleteMovie(this)">
+								Delete
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#example").DataTable();
+			});
+			const example = document.getElementById("example");
+			const addMovieForm = document.getElementById("addMovieForm");
+			const tbody = example.querySelector("tbody");
+
+			addMovieForm.addEventListener("submit", (event) => {
+				event.preventDefault();
+
+				const filmInput = addMovieForm.querySelector("#film");
+				const genreInput = addMovieForm.querySelector("#genre");
+				const leadStudioInput = addMovieForm.querySelector("#leadStudio");
+				const audienceScoreInput = addMovieForm.querySelector("#audienceScore");
+				const profitabilityInput = addMovieForm.querySelector("#profitability");
+				const rottenTomatoesInput =
+					addMovieForm.querySelector("#rottenTomatoes");
+				const worldwideGrossInput =
+					addMovieForm.querySelector("#worldwideGross");
+				const yearInput = addMovieForm.querySelector("#year");
+
+				const newRow = document.createElement("tr");
+
+				const filmCell = document.createElement("td");
+				filmCell.textContent = filmInput.value;
+				newRow.appendChild(filmCell);
+
+				const genreCell = document.createElement("td");
+				genreCell.textContent = genreInput.value;
+				newRow.appendChild(genreCell);
+
+				const leadStudioCell = document.createElement("td");
+				leadStudioCell.textContent = leadStudioInput.value;
+				newRow.appendChild(leadStudioCell);
+
+				const audienceScoreCell = document.createElement("td");
+				audienceScoreCell.textContent = audienceScoreInput.value;
+				newRow.appendChild(audienceScoreCell);
+
+				const profitabilityCell = document.createElement("td");
+				profitabilityCell.textContent = profitabilityInput.value;
+				newRow.appendChild(profitabilityCell);
+
+				const rottenTomatoesCell = document.createElement("td");
+				rottenTomatoesCell.textContent = rottenTomatoesInput.value;
+				newRow.appendChild(rottenTomatoesCell);
+
+				const worldwideGrossCell = document.createElement("td");
+				worldwideGrossCell.textContent = worldwideGrossInput.value;
+				newRow.appendChild(worldwideGrossCell);
+
+				const yearCell = document.createElement("td");
+				yearCell.textContent = yearInput.value;
+				newRow.appendChild(yearCell);
+
+				tbody.appendChild(newRow);
+
+				// Clear input fields
+				filmInput.value = "";
+				genreInput.value = "";
+				leadStudioInput.value = "";
+				audienceScoreInput.value = "";
+				profitabilityInput.value = "";
+				rottenTomatoesInput.value = "";
+				worldwideGrossInput.value = "";
+				yearInput.value = "";
+			});
+			const deleteTableButton = document.querySelector("#deleteTableButton");
+			deleteTableButton.addEventListener("click", () => {
+				const moviesTable = document.querySelector("#moviesTable");
+				moviesTable.remove();
+			});
+
+			function deleteMovie(btn) {
+				// Get the row element that contains the delete button
+				var row = btn.parentNode.parentNode;
+
+				// Remove the row from the table
+				row.parentNode.removeChild(row);
+			}
+		</script>
+	</body>
+</html>
